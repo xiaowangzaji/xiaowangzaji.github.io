@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1.1 编写一个简单的c++程序 | 小王杂记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="小王杂记">
+    
+    <link rel="preload" href="/assets/css/0.styles.7da46759.css" as="style"><link rel="preload" href="/assets/js/app.cb17b83f.js" as="script"><link rel="preload" href="/assets/js/2.6539ea43.js" as="script"><link rel="preload" href="/assets/js/33.2053035a.js" as="script"><link rel="prefetch" href="/assets/js/10.5b8e70fc.js"><link rel="prefetch" href="/assets/js/11.650a397e.js"><link rel="prefetch" href="/assets/js/12.bf9b416c.js"><link rel="prefetch" href="/assets/js/13.b955f498.js"><link rel="prefetch" href="/assets/js/14.b1d5452f.js"><link rel="prefetch" href="/assets/js/15.a30e8e9d.js"><link rel="prefetch" href="/assets/js/16.ab9040d9.js"><link rel="prefetch" href="/assets/js/17.1b4913b2.js"><link rel="prefetch" href="/assets/js/18.e04461f9.js"><link rel="prefetch" href="/assets/js/19.d401660c.js"><link rel="prefetch" href="/assets/js/20.16cc6874.js"><link rel="prefetch" href="/assets/js/21.5e5671fe.js"><link rel="prefetch" href="/assets/js/22.ca3fc8e8.js"><link rel="prefetch" href="/assets/js/23.eb1b1cd1.js"><link rel="prefetch" href="/assets/js/24.7b948069.js"><link rel="prefetch" href="/assets/js/25.15c7f27d.js"><link rel="prefetch" href="/assets/js/26.45b4e0f5.js"><link rel="prefetch" href="/assets/js/27.753de917.js"><link rel="prefetch" href="/assets/js/28.497f6f72.js"><link rel="prefetch" href="/assets/js/29.95034ca3.js"><link rel="prefetch" href="/assets/js/3.4b763652.js"><link rel="prefetch" href="/assets/js/30.e5260c6e.js"><link rel="prefetch" href="/assets/js/31.960a59cf.js"><link rel="prefetch" href="/assets/js/32.be15e861.js"><link rel="prefetch" href="/assets/js/34.b7b6fb2b.js"><link rel="prefetch" href="/assets/js/35.a6541d96.js"><link rel="prefetch" href="/assets/js/36.2106b3ee.js"><link rel="prefetch" href="/assets/js/37.3996ed87.js"><link rel="prefetch" href="/assets/js/4.af6b9618.js"><link rel="prefetch" href="/assets/js/5.f7ccee55.js"><link rel="prefetch" href="/assets/js/6.14027d31.js"><link rel="prefetch" href="/assets/js/7.af9bbd97.js"><link rel="prefetch" href="/assets/js/8.23bc11b8.js"><link rel="prefetch" href="/assets/js/9.fea70b16.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7da46759.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小王杂记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          C
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/编程语言/C/" class="nav-link">
+  C基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/编程语言/C++/C++基础.html" class="nav-link">
+  C++基础
+</a></li><li class="dropdown-subitem"><a href="/Resources/编程语言/C++/STL.html" class="nav-link">
+  STL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/计算机基础/计算机网络.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/计算机基础/操作系统.html" class="nav-link">
+  系统编程
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/计算机基础/设计模式.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据结构与算法" class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据结构与算法" class="mobile-dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/数据结构与算法/数据结构基础.html" class="nav-link">
+  数据结构基础
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/数据结构与算法/十大排序算法.html" class="nav-link">
+  常见排序算法
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/数据结构与算法/LeetCode刷题记录.html" class="nav-link">
+  LeetCode刷题记录
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/数据库/SQL基本语法.html" class="nav-link">
+  SQL基本语法
+</a></li><li class="dropdown-item"><h4>
+          关系型数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/数据库/MySQL.html" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/数据库/Redis.html" class="nav-link">
+  Redis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/笔记/视频或书籍推荐.html" class="nav-link">
+  书籍/视频汇总
+</a></li><li class="dropdown-item"><h4>
+          视频笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/笔记/读书笔记/C++Primer读书笔记/第一章.html" class="nav-link">
+  黑马视频
+</a></li></ul></li><li class="dropdown-item"><h4>
+          读书笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/笔记/读书笔记/C++Primer读书笔记/第一章.html" class="nav-link">
+  C++Primer读书笔记
+</a></li><li class="dropdown-subitem"><a href="/Resources/笔记/读书笔记/数据密集型应用系统设计.html" class="nav-link">
+  数据密集型应用系统设计
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          环境配置
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  Ubuntu
+</a></li><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  Vim
+</a></li><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  MySQl
+</a></li></ul></li><li class="dropdown-item"><h4>
+          常用软件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  VsCode
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/面经/笔试记录.html" class="nav-link">
+  笔试记录
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/面经/面试记录.html" class="nav-link">
+  面试记录
+</a></li><li class="dropdown-item"><h4>
+          八股文
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/面经/C++面经.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/计算机网络.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/操作系统面经.html" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/数据库面经.html" class="nav-link">
+  数据库
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/数据结构面经.html" class="nav-link">
+  数据结构与算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          开源项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/项目/开源项目/libco.html" class="nav-link">
+  libco
+</a></li></ul></li><li class="dropdown-item"><h4>
+          个人项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/项目/个人项目/tinyRPC.html" class="nav-link">
+  tinyRPC
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Resources/关于/关于.html" class="nav-link">
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          C
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/编程语言/C/" class="nav-link">
+  C基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/编程语言/C++/C++基础.html" class="nav-link">
+  C++基础
+</a></li><li class="dropdown-subitem"><a href="/Resources/编程语言/C++/STL.html" class="nav-link">
+  STL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/计算机基础/计算机网络.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/计算机基础/操作系统.html" class="nav-link">
+  系统编程
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/计算机基础/设计模式.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据结构与算法" class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据结构与算法" class="mobile-dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/数据结构与算法/数据结构基础.html" class="nav-link">
+  数据结构基础
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/数据结构与算法/十大排序算法.html" class="nav-link">
+  常见排序算法
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/数据结构与算法/LeetCode刷题记录.html" class="nav-link">
+  LeetCode刷题记录
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/数据库/SQL基本语法.html" class="nav-link">
+  SQL基本语法
+</a></li><li class="dropdown-item"><h4>
+          关系型数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/数据库/MySQL.html" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/数据库/Redis.html" class="nav-link">
+  Redis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/笔记/视频或书籍推荐.html" class="nav-link">
+  书籍/视频汇总
+</a></li><li class="dropdown-item"><h4>
+          视频笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/笔记/读书笔记/C++Primer读书笔记/第一章.html" class="nav-link">
+  黑马视频
+</a></li></ul></li><li class="dropdown-item"><h4>
+          读书笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/笔记/读书笔记/C++Primer读书笔记/第一章.html" class="nav-link">
+  C++Primer读书笔记
+</a></li><li class="dropdown-subitem"><a href="/Resources/笔记/读书笔记/数据密集型应用系统设计.html" class="nav-link">
+  数据密集型应用系统设计
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          环境配置
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  Ubuntu
+</a></li><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  Vim
+</a></li><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  MySQl
+</a></li></ul></li><li class="dropdown-item"><h4>
+          常用软件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  VsCode
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/面经/笔试记录.html" class="nav-link">
+  笔试记录
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/面经/面试记录.html" class="nav-link">
+  面试记录
+</a></li><li class="dropdown-item"><h4>
+          八股文
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/面经/C++面经.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/计算机网络.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/操作系统面经.html" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/数据库面经.html" class="nav-link">
+  数据库
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/数据结构面经.html" class="nav-link">
+  数据结构与算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          开源项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/项目/开源项目/libco.html" class="nav-link">
+  libco
+</a></li></ul></li><li class="dropdown-item"><h4>
+          个人项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/项目/个人项目/tinyRPC.html" class="nav-link">
+  tinyRPC
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Resources/关于/关于.html" class="nav-link">
+  关于
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="_1-1-编写一个简单的c-程序"><a href="#_1-1-编写一个简单的c-程序" class="header-anchor">#</a> <strong>1.1 编写一个简单的c++程序</strong></h3> <h4 id="_1-1-1-编译-运行程序"><a href="#_1-1-1-编译-运行程序" class="header-anchor">#</a> <strong>1.1.1 编译.运行程序</strong></h4> <p>int类型是一种<strong>内置类型</strong>，即语言自身定义的类型</p> <h3 id="_1-2-初识输入输出"><a href="#_1-2-初识输入输出" class="header-anchor">#</a> <strong>1.2 初识输入输出</strong></h3> <p>输入流和输出流而言，一个流就是一个字符序列。术语“流”的意思表示，随时间的推移，字符是顺序生成或消耗的</p> <p>标准库的四个标准输入输出流：cin、cout、cerr、clog。</p> <p>cout 可以重定向（比如输出到文件），通过缓冲区。cerr 不可以重定向（只能输出到显示器），不通过缓冲区。cerr的作用是在一些特殊的紧急情况下还可以输出（比如调用栈用完了，没有出口的递归等）。缓冲区的目的是减少刷屏的次数，多个字符同时输出到显示器。</p> <p>endl 可以刷新缓冲。在添加打印语句时，应保证一直刷新流，以防程序崩溃，输出还留在缓冲区内。</p> <h3 id="_1-3-注释简介"><a href="#_1-3-注释简介" class="header-anchor">#</a> <strong>1.3 注释简介</strong></h3> <p>当修改代码时，不要忘记修改注释。</p> <p>C++ 有两种注释：</p> <ol><li>单行注释：以双斜线（//）开始，以换行符结束。</li> <li>界定符对注释：以 /* 开始，以 */ 结束。</li></ol> <p>当界定符对注释跨越多行时，最好能显示指出其内部的程序行都属于多行注释的一部分，因此建议注释内的每行都以一个星号开头。</p> <p>在 VS 中使用快捷键注释多行时采用的是 //，理解：因为要注释的代码中可能包含 */ 字符，这种情况下使用界定符对注释会产生错误，所以采用单行注释方式。</p> <h3 id="_1-4-控制流"><a href="#_1-4-控制流" class="header-anchor">#</a> <strong>1.4 控制流</strong></h3> <h4 id="_1-4-1-while语句"><a href="#_1-4-1-while语句" class="header-anchor">#</a> <strong>1.4.1 while语句</strong></h4> <p>while 语句的执行过程中交替地检测条件和执行关联地语句，直到条件为假。</p> <h4 id="_1-4-2-for语句"><a href="#_1-4-2-for语句" class="header-anchor">#</a> <strong>1.4.2 for语句</strong></h4> <p>因为在循环条件中检测变量、在循环体中递增变量的模式使用非常频繁，所以 C++ 专门定义了第二种循环语句：for 语句，来简化这种模式。</p> <h4 id="_1-4-3-读取数量不定的输入数据"><a href="#_1-4-3-读取数量不定的输入数据" class="header-anchor">#</a> <strong>1.4.3 读取数量不定的输入数据</strong></h4> <p>使用 while(cin&gt;&gt;value) 来读取数量不定的输入，循环会一直执行到遇到<strong>文件结束符</strong>或输入错误为止。windows的文件结束符是 <strong>Ctrl+Z 然后按 Enter</strong></p> <p>在编译时，最好修改一个错误编译一次，或者最多修改了一小部分后重新编译。</p> <p>对于c++程序的缩进和格式，不存在唯一正确的风格，但是保持一致性是十分重要的。</p> <h3 id="_1-5-类简介"><a href="#_1-5-类简介" class="header-anchor">#</a> <strong>1.5 类简介</strong></h3> <p>类是 c++ 最重要的特性之一。</p> <p>**类定义了行为。**类的作者决定了类类型对象上可以使用的所有操作</p> <h4 id="_1-5-2-初识成员函数"><a href="#_1-5-2-初识成员函数" class="header-anchor">#</a> <strong>1.5.2 初识成员函数</strong></h4> <p>成员函数是定义为类的一部分的函数，也被称为方法。</p> <p>通常以类对象的名义来调用成员函数：Item.isbn()。即使用点运算符(.)</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.cb17b83f.js" defer></script><script src="/assets/js/2.6539ea43.js" defer></script><script src="/assets/js/33.2053035a.js" defer></script>
+  </body>
+</html>

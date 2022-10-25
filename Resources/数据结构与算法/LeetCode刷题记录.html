@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LeetCode刷题记录 | 小王杂记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="小王杂记">
+    
+    <link rel="preload" href="/assets/css/0.styles.7da46759.css" as="style"><link rel="preload" href="/assets/js/app.cb17b83f.js" as="script"><link rel="preload" href="/assets/js/2.6539ea43.js" as="script"><link rel="preload" href="/assets/js/13.b955f498.js" as="script"><link rel="prefetch" href="/assets/js/10.5b8e70fc.js"><link rel="prefetch" href="/assets/js/11.650a397e.js"><link rel="prefetch" href="/assets/js/12.bf9b416c.js"><link rel="prefetch" href="/assets/js/14.b1d5452f.js"><link rel="prefetch" href="/assets/js/15.a30e8e9d.js"><link rel="prefetch" href="/assets/js/16.ab9040d9.js"><link rel="prefetch" href="/assets/js/17.1b4913b2.js"><link rel="prefetch" href="/assets/js/18.e04461f9.js"><link rel="prefetch" href="/assets/js/19.d401660c.js"><link rel="prefetch" href="/assets/js/20.16cc6874.js"><link rel="prefetch" href="/assets/js/21.5e5671fe.js"><link rel="prefetch" href="/assets/js/22.ca3fc8e8.js"><link rel="prefetch" href="/assets/js/23.eb1b1cd1.js"><link rel="prefetch" href="/assets/js/24.7b948069.js"><link rel="prefetch" href="/assets/js/25.15c7f27d.js"><link rel="prefetch" href="/assets/js/26.45b4e0f5.js"><link rel="prefetch" href="/assets/js/27.753de917.js"><link rel="prefetch" href="/assets/js/28.497f6f72.js"><link rel="prefetch" href="/assets/js/29.95034ca3.js"><link rel="prefetch" href="/assets/js/3.4b763652.js"><link rel="prefetch" href="/assets/js/30.e5260c6e.js"><link rel="prefetch" href="/assets/js/31.960a59cf.js"><link rel="prefetch" href="/assets/js/32.be15e861.js"><link rel="prefetch" href="/assets/js/33.2053035a.js"><link rel="prefetch" href="/assets/js/34.b7b6fb2b.js"><link rel="prefetch" href="/assets/js/35.a6541d96.js"><link rel="prefetch" href="/assets/js/36.2106b3ee.js"><link rel="prefetch" href="/assets/js/37.3996ed87.js"><link rel="prefetch" href="/assets/js/4.af6b9618.js"><link rel="prefetch" href="/assets/js/5.f7ccee55.js"><link rel="prefetch" href="/assets/js/6.14027d31.js"><link rel="prefetch" href="/assets/js/7.af9bbd97.js"><link rel="prefetch" href="/assets/js/8.23bc11b8.js"><link rel="prefetch" href="/assets/js/9.fea70b16.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7da46759.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小王杂记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          C
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/编程语言/C/" class="nav-link">
+  C基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/编程语言/C++/C++基础.html" class="nav-link">
+  C++基础
+</a></li><li class="dropdown-subitem"><a href="/Resources/编程语言/C++/STL.html" class="nav-link">
+  STL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/计算机基础/计算机网络.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/计算机基础/操作系统.html" class="nav-link">
+  系统编程
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/计算机基础/设计模式.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据结构与算法" class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据结构与算法" class="mobile-dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/数据结构与算法/数据结构基础.html" class="nav-link">
+  数据结构基础
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/数据结构与算法/十大排序算法.html" class="nav-link">
+  常见排序算法
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/数据结构与算法/LeetCode刷题记录.html" class="nav-link">
+  LeetCode刷题记录
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/数据库/SQL基本语法.html" class="nav-link">
+  SQL基本语法
+</a></li><li class="dropdown-item"><h4>
+          关系型数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/数据库/MySQL.html" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/数据库/Redis.html" class="nav-link">
+  Redis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/笔记/视频或书籍推荐.html" class="nav-link">
+  书籍/视频汇总
+</a></li><li class="dropdown-item"><h4>
+          视频笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/笔记/读书笔记/C++Primer读书笔记/第一章.html" class="nav-link">
+  黑马视频
+</a></li></ul></li><li class="dropdown-item"><h4>
+          读书笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/笔记/读书笔记/C++Primer读书笔记/第一章.html" class="nav-link">
+  C++Primer读书笔记
+</a></li><li class="dropdown-subitem"><a href="/Resources/笔记/读书笔记/数据密集型应用系统设计.html" class="nav-link">
+  数据密集型应用系统设计
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          环境配置
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  Ubuntu
+</a></li><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  Vim
+</a></li><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  MySQl
+</a></li></ul></li><li class="dropdown-item"><h4>
+          常用软件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  VsCode
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/面经/笔试记录.html" class="nav-link">
+  笔试记录
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/面经/面试记录.html" class="nav-link">
+  面试记录
+</a></li><li class="dropdown-item"><h4>
+          八股文
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/面经/C++面经.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/计算机网络.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/操作系统面经.html" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/数据库面经.html" class="nav-link">
+  数据库
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/数据结构面经.html" class="nav-link">
+  数据结构与算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          开源项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/项目/开源项目/libco.html" class="nav-link">
+  libco
+</a></li></ul></li><li class="dropdown-item"><h4>
+          个人项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/项目/个人项目/tinyRPC.html" class="nav-link">
+  tinyRPC
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Resources/关于/关于.html" class="nav-link">
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          C
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/编程语言/C/" class="nav-link">
+  C基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/编程语言/C++/C++基础.html" class="nav-link">
+  C++基础
+</a></li><li class="dropdown-subitem"><a href="/Resources/编程语言/C++/STL.html" class="nav-link">
+  STL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/计算机基础/计算机网络.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/计算机基础/操作系统.html" class="nav-link">
+  系统编程
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/计算机基础/设计模式.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据结构与算法" class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据结构与算法" class="mobile-dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/数据结构与算法/数据结构基础.html" class="nav-link">
+  数据结构基础
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/数据结构与算法/十大排序算法.html" class="nav-link">
+  常见排序算法
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/数据结构与算法/LeetCode刷题记录.html" class="nav-link">
+  LeetCode刷题记录
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/数据库/SQL基本语法.html" class="nav-link">
+  SQL基本语法
+</a></li><li class="dropdown-item"><h4>
+          关系型数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/数据库/MySQL.html" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          非关系型数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/数据库/Redis.html" class="nav-link">
+  Redis
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/笔记/视频或书籍推荐.html" class="nav-link">
+  书籍/视频汇总
+</a></li><li class="dropdown-item"><h4>
+          视频笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/笔记/读书笔记/C++Primer读书笔记/第一章.html" class="nav-link">
+  黑马视频
+</a></li></ul></li><li class="dropdown-item"><h4>
+          读书笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/笔记/读书笔记/C++Primer读书笔记/第一章.html" class="nav-link">
+  C++Primer读书笔记
+</a></li><li class="dropdown-subitem"><a href="/Resources/笔记/读书笔记/数据密集型应用系统设计.html" class="nav-link">
+  数据密集型应用系统设计
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          环境配置
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  Ubuntu
+</a></li><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  Vim
+</a></li><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  MySQl
+</a></li></ul></li><li class="dropdown-item"><h4>
+          常用软件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/study/math/" class="nav-link">
+  VsCode
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow down"></span></button> <button type="button" aria-label="面经" class="mobile-dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Resources/面经/笔试记录.html" class="nav-link">
+  笔试记录
+</a></li><li class="dropdown-item"><!----> <a href="/Resources/面经/面试记录.html" class="nav-link">
+  面试记录
+</a></li><li class="dropdown-item"><h4>
+          八股文
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/面经/C++面经.html" class="nav-link">
+  C++
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/计算机网络.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/操作系统面经.html" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/数据库面经.html" class="nav-link">
+  数据库
+</a></li><li class="dropdown-subitem"><a href="/Resources/面经/数据结构面经.html" class="nav-link">
+  数据结构与算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          开源项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/项目/开源项目/libco.html" class="nav-link">
+  libco
+</a></li></ul></li><li class="dropdown-item"><h4>
+          个人项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Resources/项目/个人项目/tinyRPC.html" class="nav-link">
+  tinyRPC
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/Resources/关于/关于.html" class="nav-link">
+  关于
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Resources/数据结构与算法/数据结构基础.html" class="sidebar-link">数据结构与算法</a></li><li><a href="/Resources/数据结构与算法/十大排序算法.html" class="sidebar-link">常见排序算法</a></li><li><a href="/Resources/数据结构与算法/LeetCode刷题记录.html" class="active sidebar-link">LeetCode刷题记录</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Resources/数据结构与算法/LeetCode刷题记录.html#_116-填充每个节点的下一个右侧节点指针" class="sidebar-link">116. 填充每个节点的下一个右侧节点指针</a></li><li class="sidebar-sub-header"><a href="/Resources/数据结构与算法/LeetCode刷题记录.html#_130-被围绕的区域" class="sidebar-link">130.被围绕的区域</a></li><li class="sidebar-sub-header"><a href="/Resources/数据结构与算法/LeetCode刷题记录.html#_547-省份数量" class="sidebar-link">547.省份数量</a></li><li class="sidebar-sub-header"><a href="/Resources/数据结构与算法/LeetCode刷题记录.html#_684" class="sidebar-link">684</a></li><li class="sidebar-sub-header"><a href="/Resources/数据结构与算法/LeetCode刷题记录.html#_765-情侣牵手" class="sidebar-link">765.情侣牵手</a></li><li class="sidebar-sub-header"><a href="/Resources/数据结构与算法/LeetCode刷题记录.html#_2367" class="sidebar-link">2367</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="leetcode刷题记录"><a href="#leetcode刷题记录" class="header-anchor">#</a> LeetCode刷题记录</h1> <h2 id="_116-填充每个节点的下一个右侧节点指针"><a href="#_116-填充每个节点的下一个右侧节点指针" class="header-anchor">#</a> 116. 填充每个节点的下一个右侧节点指针</h2> <p>给定一个 <strong>完美二叉树</strong> ，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：</p> <div class="language- extra-class"><pre class="language-text"><code>struct Node {
+  int val;
+  Node *left;
+  Node *right;
+  Node *next;
+}
+</code></pre></div><p>填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 <code>NULL</code>。</p> <p>初始状态下，所有 next 指针都被设置为 <code>NULL</code>。</p> <p><strong>示例 1：</strong></p> <p><img src="https://assets.leetcode.com/uploads/2019/02/14/116_sample.png" alt=""></p> <div class="language- extra-class"><pre class="language-text"><code>输入：root = [1,2,3,4,5,6,7]
+输出：[1,#,2,3,#,4,5,6,7,#]
+解释：给定二叉树如图 A 所示，你的函数应该填充它的每个 next 指针，以指向其下一个右侧节点，如图 B 所示。序列化的输出按层序遍历排列，同一层节点由 next 指针连接，'#' 标志着每一层的结束。
+
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入：root = []
+输出：[]
+
+</code></pre></div><p><strong>提示：</strong></p> <ul><li>树中节点的数量在 <code>[0, 212 - 1]</code> 范围内</li> <li><code>-1000 &lt;= node.val &lt;= 1000</code></li></ul> <p><strong>进阶：</strong></p> <ul><li>你只能使用常量级额外空间。</li> <li>使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。</li></ul> <h3 id="解法-层序遍历"><a href="#解法-层序遍历" class="header-anchor">#</a> 解法：层序遍历</h3> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token comment">/*
+// Definition for a Node.
+class Node {
+public:
+    int val;
+    Node* left;
+    Node* right;
+    Node* next;
+
+    Node() : val(0), left(NULL), right(NULL), next(NULL) {}
+
+    Node(int _val) : val(_val), left(NULL), right(NULL), next(NULL) {}
+
+    Node(int _val, Node* _left, Node* _right, Node* _next)
+        : val(_val), left(_left), right(_right), next(_next) {}
+};
+*/</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    Node<span class="token operator">*</span> <span class="token function">connect</span><span class="token punctuation">(</span>Node<span class="token operator">*</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>      
+        
+        <span class="token keyword">if</span><span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> root<span class="token punctuation">;</span>
+        Node<span class="token operator">*</span> head <span class="token operator">=</span> root<span class="token punctuation">;</span>
+
+        queue<span class="token operator">&lt;</span>Node<span class="token operator">*</span><span class="token operator">&gt;</span> que_root<span class="token punctuation">;</span>
+        que_root<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token operator">!</span>que_root<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> que_root_size <span class="token operator">=</span> que_root<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>que_root_size<span class="token punctuation">;</span><span class="token operator">++</span>i<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                Node<span class="token operator">*</span> node <span class="token operator">=</span> que_root<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                que_root<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">!=</span> que_root_size <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+                    node<span class="token operator">-&gt;</span>next <span class="token operator">=</span> que_root<span class="token punctuation">.</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                
+                <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token operator">-&gt;</span>left <span class="token operator">!=</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    que_root<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>node<span class="token operator">-&gt;</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token operator">-&gt;</span>right <span class="token operator">!=</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    que_root<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>node<span class="token operator">-&gt;</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> root<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_130-被围绕的区域"><a href="#_130-被围绕的区域" class="header-anchor">#</a> 130.被围绕的区域</h2> <p>给你一个 m x n 的矩阵 board ，由若干字符 'X' 和 'O' ，找到所有被 'X' 围绕的区域，并将这些区域里所有的 'O' 用 'X' 填充。</p> <p><strong>示例 1：</strong></p> <p><img src="/usr/uploads/2022/08/89100332.png" alt=""></p> <div class="language- extra-class"><pre><code>输入：board = [[&quot;X&quot;,&quot;X&quot;,&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;O&quot;,&quot;O&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;X&quot;,&quot;O&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;O&quot;,&quot;X&quot;,&quot;X&quot;]]
+输出：[[&quot;X&quot;,&quot;X&quot;,&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;X&quot;,&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;X&quot;,&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;O&quot;,&quot;X&quot;,&quot;X&quot;]]
+解释：被围绕的区间不会存在于边界上，换句话说，任何边界上的 'O' 都不会被填充为 'X'。 任何不在边界上，或不与边界上的 'O' 相连的 'O'
+最终都会被填充为 'X'。如果两个元素在水平或垂直方向相邻，则称它们是“相连”的。
+</code></pre></div><p><strong>示例 2：</strong></p> <p><code>输入：board = [[&quot;X&quot;]] 输出：[[&quot;X&quot;]]</code></p> <h3 id="并查集解题"><a href="#并查集解题" class="header-anchor">#</a> <strong>并查集解题</strong></h3> <p>同一个连通区域内的所有点的根节点是同一个。将每个点映射成一个数字。先假设每个点的根节点就是他们自己，然后我们以此输入连通的点对，然后将其中一个点的根节点赋成另一个节点的根节点，这样这两个点所在连通区域又相互连通了。</p> <p>把所有边界上的 OO 看做一个连通区域。遇到 OO 就执行并查集合并操作，这样所有的 OO 就会被分成两类</p> <ul><li>和边界上的 OO 在一个连通区域内的。这些 OO 我们保留。</li> <li>不和边界上的 OO 在一个连通区域内的。这些 OO 就是被包围的，替换。</li></ul> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">void</span> <span class="token function">solve</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token operator">&gt;&gt;</span><span class="token operator">&amp;</span> board<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        
+        <span class="token keyword">int</span> m <span class="token operator">=</span> board<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> board<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">init</span><span class="token punctuation">(</span>m<span class="token operator">*</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> m <span class="token punctuation">;</span><span class="token operator">++</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+             <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n <span class="token punctuation">;</span><span class="token operator">++</span>j<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> j  <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token char">'O'</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    <span class="token function">unite</span><span class="token punctuation">(</span>i<span class="token operator">*</span>n<span class="token operator">+</span>j<span class="token punctuation">,</span>m<span class="token operator">*</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>j <span class="token operator">==</span> n<span class="token operator">-</span><span class="token number">1</span> <span class="token operator">&amp;&amp;</span> board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token char">'O'</span> <span class="token punctuation">)</span> <span class="token comment">//最右边</span>
+                <span class="token punctuation">{</span>
+                    <span class="token function">unite</span><span class="token punctuation">(</span>i<span class="token operator">*</span>n<span class="token operator">+</span>j<span class="token punctuation">,</span>m<span class="token operator">*</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                     <span class="token keyword">if</span><span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token char">'O'</span><span class="token punctuation">)</span>  <span class="token function">unite</span><span class="token punctuation">(</span>i<span class="token operator">*</span>n<span class="token operator">+</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>n<span class="token operator">*</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">==</span> m<span class="token operator">-</span><span class="token number">1</span> <span class="token operator">&amp;&amp;</span> board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token char">'O'</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    <span class="token function">unite</span><span class="token punctuation">(</span>i<span class="token operator">*</span>n<span class="token operator">+</span>j<span class="token punctuation">,</span>m<span class="token operator">*</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span>board<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token char">'O'</span><span class="token punctuation">)</span>  <span class="token function">unite</span><span class="token punctuation">(</span><span class="token punctuation">(</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span>n <span class="token operator">+</span> j<span class="token punctuation">,</span>n<span class="token operator">*</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//最下面</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token char">'O'</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span>board<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token char">'O'</span><span class="token punctuation">)</span>  <span class="token function">unite</span><span class="token punctuation">(</span><span class="token punctuation">(</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span>n<span class="token operator">+</span>j<span class="token punctuation">,</span>i<span class="token operator">*</span>n <span class="token operator">+</span> j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token char">'O'</span><span class="token punctuation">)</span>  <span class="token function">unite</span><span class="token punctuation">(</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token operator">*</span>n <span class="token operator">+</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>i<span class="token operator">*</span>n <span class="token operator">+</span> j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+         <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> m <span class="token punctuation">;</span><span class="token operator">++</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+             <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n <span class="token punctuation">;</span><span class="token operator">++</span>j<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">find_pre</span><span class="token punctuation">(</span>i<span class="token operator">*</span>n<span class="token operator">+</span>j<span class="token punctuation">)</span> <span class="token operator">!=</span> n<span class="token operator">*</span>m<span class="token punctuation">)</span>
+                    board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token char">'X'</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+
+<span class="token keyword">private</span><span class="token operator">:</span>
+
+    <span class="token comment">//初始化</span>
+    <span class="token keyword">void</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        pre<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">;</span><span class="token operator">++</span>i<span class="token punctuation">)</span>
+		    pre<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">int</span> <span class="token function">find_pre</span><span class="token punctuation">(</span><span class="token keyword">int</span> key<span class="token punctuation">)</span>		   <span class="token comment">//寻找根节点函数</span>
+    <span class="token punctuation">{</span>
+	    <span class="token keyword">if</span><span class="token punctuation">(</span>pre<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token operator">==</span>key<span class="token punctuation">)</span> <span class="token keyword">return</span> key<span class="token punctuation">;</span>
+	    <span class="token keyword">return</span> pre<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">find_pre</span><span class="token punctuation">(</span>pre<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">void</span> <span class="token function">unite</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span><span class="token keyword">int</span> y<span class="token punctuation">)</span>		   <span class="token comment">//联合函数</span>
+    <span class="token punctuation">{</span>
+	    <span class="token keyword">int</span> rootx<span class="token operator">=</span><span class="token function">find_pre</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	    <span class="token keyword">int</span> rooty<span class="token operator">=</span><span class="token function">find_pre</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	    <span class="token keyword">if</span><span class="token punctuation">(</span>rootx<span class="token operator">!=</span>rooty<span class="token punctuation">)</span> rootx <span class="token operator">&gt;</span> rooty <span class="token operator">?</span>  pre<span class="token punctuation">[</span>rooty<span class="token punctuation">]</span><span class="token operator">=</span>rootx  <span class="token operator">:</span>pre<span class="token punctuation">[</span>rootx<span class="token punctuation">]</span><span class="token operator">=</span>rooty<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> pre<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_547-省份数量"><a href="#_547-省份数量" class="header-anchor">#</a> 547.省份数量</h2> <p>有 <code>n</code> 个城市，其中一些彼此相连，另一些没有相连。如果城市 <code>a</code> 与城市 <code>b</code> 直接相连，且城市 <code>b</code> 与城市 <code>c</code> 直接相连，那么城市 <code>a</code> 与城市 <code>c</code> 间接相连。</p> <p><strong>省份</strong> 是一组直接或间接相连的城市，组内不含其他没有相连的城市。</p> <p>给你一个 <code>n x n</code> 的矩阵 <code>isConnected</code> ，其中 <code>isConnected[i][j] = 1</code> 表示第 <code>i</code> 个城市和第 <code>j</code> 个城市直接相连，而 <code>isConnected[i][j] = 0</code> 表示二者不直接相连。</p> <p>返回矩阵中 <strong>省份</strong> 的数量。</p> <p><strong>示例 1：</strong></p> <p><img src="https://assets.leetcode.com/uploads/2020/12/24/graph1.jpg" alt=""></p> <div class="language- extra-class"><pre class="language-text"><code>输入：isConnected = [[1,1,0],[1,1,0],[0,0,1]]
+输出：2
+
+</code></pre></div><p><strong>示例 2：</strong></p> <p><img src="https://assets.leetcode.com/uploads/2020/12/24/graph2.jpg" alt=""></p> <div class="language- extra-class"><pre class="language-text"><code>输入：isConnected = [[1,0,0],[0,1,0],[0,0,1]]
+输出：3
+
+</code></pre></div><p><strong>提示：</strong></p> <ul><li><code>1 &lt;= n &lt;= 200</code></li> <li><code>n == isConnected.length</code></li> <li><code>n == isConnected[i].length</code></li> <li><code>isConnected[i][j]</code> 为 <code>1</code> 或 <code>0</code></li> <li><code>isConnected[i][i] == 1</code></li> <li><code>isConnected[i][j] == isConnected[j][i]</code></li></ul> <p>来源：力扣（LeetCode）
+链接：https://leetcode.cn/problems/number-of-provinces</p> <h3 id="解法-并查集"><a href="#解法-并查集" class="header-anchor">#</a> 解法 并查集</h3> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> <span class="token function">findCircleNum</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;&gt;</span><span class="token operator">&amp;</span> isConnected<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token keyword">int</span> isConnected_size <span class="token operator">=</span> isConnected<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token function">pre</span><span class="token punctuation">(</span>isConnected_size<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>isConnected_size<span class="token punctuation">;</span><span class="token operator">++</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            pre<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>isConnected_size<span class="token punctuation">;</span><span class="token operator">++</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>isConnected_size<span class="token punctuation">;</span><span class="token operator">++</span>j<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">!=</span> j <span class="token operator">&amp;&amp;</span> isConnected<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    <span class="token function">add</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>i<span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token function">ans</span><span class="token punctuation">(</span>isConnected_size<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>isConnected_size<span class="token punctuation">;</span><span class="token operator">++</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            ans<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>pre<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">int</span> re <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>isConnected_size<span class="token punctuation">;</span><span class="token operator">++</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>ans<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                re<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> pre<span class="token punctuation">,</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span>
+            <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> pre<span class="token punctuation">,</span><span class="token keyword">int</span> x <span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        x <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        y <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>x <span class="token operator">!=</span> y<span class="token punctuation">)</span> pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> y<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_684"><a href="#_684" class="header-anchor">#</a> 684</h2> <p>给定往一棵 <code>n</code> 个节点 (节点值 <code>1～n</code>) 的树中添加一条边后的图。添加的边的两个顶点包含在 <code>1</code> 到 <code>n</code> 中间，且这条附加的边不属于树中已存在的边。图的信息记录于长度为 <code>n</code> 的二维数组 <code>edges</code> ，<code>edges[i] = [ai, bi]</code> 表示图中在 <code>ai</code> 和 <code>bi</code> 之间存在一条边。</p> <p>请找出一条可以删去的边，删除后可使得剩余部分是一个有着 <code>n</code> 个节点的树。如果有多个答案，则返回数组 <code>edges</code> 中最后出现的边。</p> <p><strong>示例 1：</strong></p> <p><img src="https://pic.leetcode-cn.com/1626676174-hOEVUL-image.png" alt=""></p> <div class="language- extra-class"><pre class="language-text"><code>输入: edges = [[1,2], [1,3], [2,3]]
+输出: [2,3]
+</code></pre></div><p><strong>示例 2：</strong></p> <p><img src="https://pic.leetcode-cn.com/1626676179-kGxcmu-image.png" alt=""></p> <div class="language- extra-class"><pre class="language-text"><code>输入: edges = [[1,2], [2,3], [3,4], [1,4], [1,5]]
+输出: [1,4]
+</code></pre></div><p><strong>提示:</strong></p> <ul><li><code>n == edges.length</code></li> <li><code>3 &lt;= n &lt;= 1000</code></li> <li><code>edges[i].length == 2</code></li> <li><code>1 &lt;= ai &lt; bi &lt;= edges.length</code></li> <li><code>ai != bi</code></li> <li><code>edges</code> 中无重复元素</li> <li>给定的图是连通的</li></ul> <h3 id="解法1-并查集"><a href="#解法1-并查集" class="header-anchor">#</a> 解法1: 并查集</h3> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token function">findRedundantConnection</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;&gt;</span><span class="token operator">&amp;</span> edges<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> edges<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token function">pre</span><span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> ans<span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token operator">++</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            pre<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token operator">++</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> p_x <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>edges<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> p_y <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>edges<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">if</span><span class="token punctuation">(</span>p_x <span class="token operator">==</span> p_y<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                ans<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>edges<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                ans<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>edges<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span>
+            <span class="token punctuation">{</span>
+                pre<span class="token punctuation">[</span>p_x<span class="token punctuation">]</span> <span class="token operator">=</span> p_y<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> ans<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> pre<span class="token punctuation">,</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span>
+            <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_765-情侣牵手"><a href="#_765-情侣牵手" class="header-anchor">#</a> 765.情侣牵手</h2> <p>n 对情侣坐在连续排列的 2n 个座位上，想要牵到对方的手。</p> <p>人和座位由一个整数数组 row 表示，其中 row[i] 是坐在第 i 个座位上的人的 ID。情侣们按顺序编号，第一对是 (0, 1)，第二对是 (2, 3)，以此类推，最后一对是 (2n-2, 2n-1)。</p> <p>返回 最少交换座位的次数，以便每对情侣可以并肩坐在一起。 每次交换可选择任意两人，让他们站起来交换座位。</p> <p><strong>示例 1:</strong></p> <div class="language- extra-class"><pre><code>输入: row = [0,2,1,3]
+输出: 1
+解释: 只需要交换row[1]和row[2]的位置即可。
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre><code>输入: row = [3,2,0,1]
+输出: 0
+解释: 无需交换座位，所有的情侣都已经可以手牵手了。
+</code></pre></div><p>提示:</p> <ul><li>2n == row.length</li> <li>2 &lt;= n &lt;= 30</li> <li>n 是偶数</li> <li>0 &lt;= row[i] &lt; 2n</li> <li>row 中所有元素均无重复</li></ul> <h3 id="并查集"><a href="#并查集" class="header-anchor">#</a> 并查集</h3> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> <span class="token function">minSwapsCouples</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> row<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token keyword">int</span> row_size <span class="token operator">=</span> row<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token function">pre</span><span class="token punctuation">(</span>row_size<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> row_size<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            pre<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> row_size<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>row<span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">2</span> <span class="token operator">!=</span> row<span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">2</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token comment">//cout &lt;&lt; row[i*2] &lt;&lt; &quot;;&quot; &lt;&lt; row[i*2 + 1] &lt;&lt;endl;</span>
+                <span class="token function">join</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>row<span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">,</span>row<span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">2</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> <span class="token function">ans_pre</span><span class="token punctuation">(</span>row_size<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> row_size<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token comment">//cout &lt;&lt; find(pre,pre[i])&lt;&lt;endl;</span>
+            ans_pre<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>pre<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">int</span> ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">auto</span><span class="token operator">&amp;</span> q<span class="token operator">:</span>ans_pre<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>q <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+                ans <span class="token operator">+=</span> <span class="token punctuation">(</span>q <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> ans<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> pre<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token operator">!=</span> x<span class="token punctuation">)</span>
+            x <span class="token operator">=</span> pre<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> x<span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">void</span> <span class="token function">join</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> pre<span class="token punctuation">,</span><span class="token keyword">int</span> x<span class="token punctuation">,</span><span class="token keyword">int</span> y<span class="token punctuation">)</span>                     
+    <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> fx<span class="token operator">=</span><span class="token function">find</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>x<span class="token punctuation">)</span><span class="token punctuation">,</span> fy<span class="token operator">=</span><span class="token function">find</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>            
+        <span class="token keyword">if</span><span class="token punctuation">(</span>fx <span class="token operator">!=</span> fy<span class="token punctuation">)</span>                           
+            pre<span class="token punctuation">[</span>fx<span class="token punctuation">]</span><span class="token operator">=</span>fy<span class="token punctuation">;</span>                     
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_2367"><a href="#_2367" class="header-anchor">#</a> 2367</h2> <p>给你一个下标从 0 开始、严格递增 的整数数组 nums 和一个正整数 diff 。如果满足下述全部条件，则三元组 <code>(i, j, k)</code> 就是一个 算术三元组 ：</p> <ul><li><code>i &lt; j &lt; k ，</code></li> <li><code>nums[j] - nums[i] == diff</code> 且</li> <li><code>nums[k] - nums[j] == diff</code>
+返回不同 算术三元组 的数目。</li></ul> <p>示例 1：</p> <div class="language- extra-class"><pre><code>输入：nums = [0,1,4,6,7,10], diff = 3
+输出：2
+解释：
+(1, 2, 4) 是算术三元组：7 - 4 == 3 且 4 - 1 == 3 。
+(2, 4, 5) 是算术三元组：10 - 7 == 3 且 7 - 4 == 3 。
+</code></pre></div><p>示例 2：</p> <div class="language- extra-class"><pre><code>输入：nums = [4,5,6,7,8,9], diff = 2
+输出：2
+解释：
+(0, 2, 4) 是算术三元组：8 - 6 == 2 且 6 - 4 == 2 。
+(1, 3, 5) 是算术三元组：9 - 7 == 2 且 7 - 5 == 2 。
+</code></pre></div><h3 id="方法一-暴力遍历"><a href="#方法一-暴力遍历" class="header-anchor">#</a> <strong>方法一 暴力遍历</strong></h3> <p>时间复杂度 O(n^3)
+空间复杂度 O(1)</p> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> <span class="token function">arithmeticTriplets</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> diff<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        
+        <span class="token keyword">int</span> s <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> re <span class="token operator">=</span> <span class="token number">0</span> <span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>s<span class="token punctuation">;</span><span class="token operator">++</span>i<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>s<span class="token punctuation">;</span><span class="token operator">++</span>j<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> k<span class="token operator">=</span> j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>k <span class="token operator">&lt;</span> s<span class="token punctuation">;</span><span class="token operator">++</span>k<span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">-</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> diff <span class="token operator">&amp;&amp;</span> nums<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">-</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> diff<span class="token punctuation">)</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token operator">++</span>re<span class="token punctuation">;</span>
+                        <span class="token keyword">continue</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span> 
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="方法二哈希"><a href="#方法二哈希" class="header-anchor">#</a> <strong>方法二哈希</strong></h3> <p>时间复杂度 O(n)
+空间复杂度 O(n)</p> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> <span class="token function">arithmeticTriplets</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> diff<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> nums_set<span class="token punctuation">;</span>
+         <span class="token keyword">int</span> re <span class="token operator">=</span> <span class="token number">0</span> <span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">auto</span> i<span class="token operator">:</span>nums<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            nums_set<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">auto</span> i<span class="token operator">:</span>nums<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>nums_set<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>i<span class="token operator">-</span>diff<span class="token punctuation">)</span> <span class="token operator">!=</span> nums_set<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>nums_set<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>i<span class="token operator">+</span>diff<span class="token punctuation">)</span><span class="token operator">!=</span> nums_set<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token operator">++</span> re<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="方法三-三指针法"><a href="#方法三-三指针法" class="header-anchor">#</a> <strong>方法三 三指针法</strong></h3> <p>时间复杂度 O(n)
+空间复杂度 O(1)</p> <div class="language-cpp extra-class"><pre class="language-cpp"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> <span class="token function">arithmeticTriplets</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> diff<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> re <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> j <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> k <span class="token operator">=</span> j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> 
+        <span class="token punctuation">{</span>
+            <span class="token keyword">while</span><span class="token punctuation">(</span>j <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;</span> n <span class="token operator">&amp;&amp;</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;</span> diff<span class="token punctuation">)</span>    <span class="token comment">//先确保 j 和 i</span>
+                <span class="token operator">++</span>j<span class="token punctuation">;</span>
+            k <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span><span class="token punctuation">(</span>k <span class="token operator">&lt;</span> n <span class="token operator">&amp;&amp;</span> nums<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">-</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&lt;</span> diff<span class="token punctuation">)</span> <span class="token operator">++</span>k<span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>k <span class="token operator">&lt;</span> n <span class="token operator">&amp;&amp;</span> nums<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">-</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> diff <span class="token operator">&amp;&amp;</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> diff<span class="token punctuation">)</span> <span class="token operator">++</span>re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Resources/数据结构与算法/十大排序算法.html" class="prev">
+        常见排序算法
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.cb17b83f.js" defer></script><script src="/assets/js/2.6539ea43.js" defer></script><script src="/assets/js/13.b955f498.js" defer></script>
+  </body>
+</html>
